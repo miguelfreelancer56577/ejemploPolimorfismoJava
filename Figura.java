@@ -28,6 +28,8 @@ public abstract class Figura {
     
     abstract protected Float area();
     
+    abstract protected Figura getNewFigura();
+    
     public static void mostrarFigura(Figura fg){
         System.out.println("El area de tu figura es:");
         System.out.println(fg.area());

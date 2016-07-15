@@ -22,6 +22,11 @@ public class Circulo extends Figura{
     protected Float area(){
         return new Float(PI * (radio * 2));
     }
+    
+    @Override
+    protected Circulo getNewFigura(){
+        return new Circulo(radio, color);
+    }
 
     public float getRadio() {
         return radio;

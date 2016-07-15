@@ -39,6 +39,11 @@ public class Rectangulo extends Figura {
     protected Float area(){
         return base*altura;
     }
+    
+    @Override
+    protected Rectangulo getNewFigura(){
+        return new Rectangulo(base, altura, color);
+    }
 
     @Override
     public int hashCode() {

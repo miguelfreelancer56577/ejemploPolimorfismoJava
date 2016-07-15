@@ -39,6 +39,11 @@ public class Triangulo extends Figura{
     public Float area(){
         return (base*altura)/2;
     }
+    
+    @Override
+    protected Triangulo getNewFigura(){
+        return new Triangulo(base, altura, color);
+    }
 
     @Override
     public int hashCode() {
